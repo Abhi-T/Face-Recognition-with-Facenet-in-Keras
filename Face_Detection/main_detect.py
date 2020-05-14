@@ -14,6 +14,7 @@ def preprocess_image(image_path):
 
 # model=model_from_json(open("facenet_model.json","r").read())
 model = InceptionResNetV1()
+#download weights from https://drive.google.com/file/d/1971Xk5RwedbudGgTIrGAL4F7Aifu7id1/view?usp=sharing
 model.load_weights('facenet_weights.h5')
 print(model.summary())
 
